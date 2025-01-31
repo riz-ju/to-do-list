@@ -28,6 +28,7 @@ export class TodoListComponent {
 
   removeTodo(id: number){
     this.todoservice.removeTodo(id);
+    this.todos = this.todoservice.getTodos();
   }
 
 }
